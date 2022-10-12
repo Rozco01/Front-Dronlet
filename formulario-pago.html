@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Estilos -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style-forms.css">
+        <title>Formulario de Pago</title>
+    </head>
+    <body>
+        <div class="card">
+            <h5 class="card-header">Formulario de Pago</h5>
+            <div class="card-body">
+                <div class="alert alert-danger" role="alert">
+                    <i class="fas fa-exclamation-circle"></i> Ingrese datos validos
+                    </div>
+                <form id="miFormulario">
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="inputCard">Número de Tarjeta</label>
+                            <input type="number" class="form-control"  id="inputCard" 
+                            placeholder="XXXXXXXXXXX" name="card">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputCVC">CVV</label>
+                            <input type="number" class="form-control" id="inputCVC" placeholder="000" 
+                             name= "cvc">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                            <div class="form-group col-md">
+                                <label for="inputName">Nombre</label>
+                                <input type="text" class="form-control" id="inputName" maxlength="15" placeholder=""
+                                name="nombre">
+                            </div>
+                            <div class="form-group col-md">
+                                <label for="inputLastname">Apellidos</label>
+                                <input type="text" class="form-control" id="inputLastname" maxlength="15" placeholder=""
+                                name="apellido">
+                            </div>
+                        </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Ciudad</label>
+                            <input type="text" class="form-control" id="inputCity" maxlength="15" name="ciudad">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputState">Estado</label>
+                            <select id="inputState" class="form-control" name="estado">
+                                <option value="" selected>Departamento...</option>
+                                <option value="california">Santander</option>
+                                <option value="florida">Antioquia</option>
+                                <option value="nevada">Bogota D.C</option>
+                                <option value="otro">Otro Departamento</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputZip">Código Postal</label>
+                            <input type="text" class="form-control" id="inputZip" maxlength="10" 
+                            name="codigoPostal">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label class="tarjetas" for="">Aceptamos:</label>
+                            <div class="form-control seleccionTarjeta">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipoTarjeta" 
+                                id="inlineRadio1" value="mc">
+                                <label class="form-check-label" for="inlineRadio1">
+                                    <i class="fab fa-cc-mastercard"></i>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipoTarjeta" 
+                                id="inlineRadio2" value="visa">
+                                <label class="form-check-label" for="inlineRadio2">
+                                    <i class="fab fa-cc-visa"></i>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipoTarjeta" 
+                                id="inlineRadio3" value="dinersClub">
+                                <label class="form-check-label" for="inlineRadio3">
+                                    <i class="fab fa-cc-diners-club"></i>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipoTarjeta" 
+                                id="inlineRadio4" value="americanExpress">
+                                <label class="form-check-label" for="inlineRadio4">
+                                    <i class="fab fa-cc-amex"></i>
+                                </label>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3">    
+                        </div>
+                    </div>
+                    <button type="submit" class="btn__comprar">Enviar</button>
+                    <a href="index.html" class="btn__volver" >Volver</a>
+                </form>
+            
+            </div>
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script type="text/javascript" src="./js/formulario.js"></script> -->
+  </body>
+</html>

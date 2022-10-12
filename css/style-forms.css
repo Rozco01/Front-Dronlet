@@ -1,0 +1,67 @@
+.alert{
+    display: none;
+}
+.card{
+    width: 60%;
+    margin: 15px auto;
+}
+.card-header{
+    background-color: #d5e4ef;
+}
+
+.tarjetas{
+    display:block;
+}
+.btn__comprar{
+    background-color: rgb(34, 139, 34);
+    padding: 8px 13px;
+    margin: 10px 0px;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn__comprar:hover{
+    background-color: #57A639;
+}
+
+.form-check-label{
+    font-size: 30px;
+}
+
+.btn__volver {
+    
+    float: right;
+    background-color: #FFA420;
+    padding: 8px 13px;
+    margin: 10px;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn__volver:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #FF7514;
+}
+
+
+.seleccionTarjeta{
+    height: 55px;
+}
+
+/*Eliminar flechas de input tipo número*/ 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}

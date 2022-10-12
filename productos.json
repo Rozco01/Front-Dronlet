@@ -1,0 +1,25 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "title": "Roles Date",
+            "price": 1010000,
+            "image": "https://cdn4.chrono24.com/images/topmodels/2846-alz5vjoi11mxlc54imf27mlj-Original.png?auto=compress&amp;h=305",
+            "category": "reloj"
+        },
+        {
+            "id": 2,
+            "title": "Computadora laptop Samgsun",
+            "price": 1040000,
+            "image": "https://img.global.news.samsung.com/co/wp-content/uploads/2019/01/Notebook-9-Pro-3-613x408.jpg",
+            "category": "laptop"
+        },
+        {
+            "id": 3,
+            "title": "Huawei Nova 8i 128G",
+            "price": 3500000,
+            "image": "https://www.comprascolectivas.com/6165-large_default/celular-moto-g4-play.jpg",
+            "category": "celular"
+        }
+    ]
+}
