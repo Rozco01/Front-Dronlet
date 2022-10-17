@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DronLet - Tienda online</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Box icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style-forms.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--Navegation-->
+    <nav class="nav">
+      <div class="nav__center container">
+        <div class="nav__logo">
+					<h1>DRONLET</h1>
+				</div>
+				<ul class="nav__list">
+            <a href="login.html" class="btn_inicioRegistro">Iniciar sesion</a>
+            <a href="register.html" class="btn_inicioRegistro">Registrarse</a>
+				</ul>
+      </div>
+    </nav>
+
+    <!--Formulario-->
+    <div class="card col-md-3">
+        <h1 class="card-header ">Modificar del Producto</h1>
+        <div class="card-body">
+            <div class="alert alert-danger" role="alert">
+                <i class="fas fa-exclamation-circle"></i> Ingrese datos validos
+                </div>
+            <form id="miFormulario">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCard">Nombre</label>
+                        <input type="number" class="form-control"  id="inputCard" 
+                        placeholder="" name="card">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCVC">Precio</label>
+                        <input type="number" class="form-control" id="inputCVC" placeholder="" 
+                         name= "cvc">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="inputCVC">Imagen</label>
+                        <img src="https://toppng.com/uploads/preview/file-upload-image-icon-115632290507ftgixivqp.png" width="80%">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputState">Categoria</label>
+                        <select id="inputState" class="form-control" name="estado">
+                            <option value="" selected>Categoria...</option>
+                            <option value="california">Relojes</option>
+                            <option value="florida">Laptop</option>
+                            <option value="nevada">Celulares</option>
+                        </select>
+                    </div>  
+                </div>
+                <button type="submit" class="btn__comprar">Actualizar</button>
+                <a href="index.html" class="btn__volver" >Volver</a>
+            </form>
+        
+        </div>
+    </div>
+    <!--Carrito-->
+
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+  </body>
+</html>

@@ -2,8 +2,9 @@
     display: none;
 }
 .card{
+    
     width: 60%;
-    margin: 15px auto;
+    margin: 5% auto;
 }
 .card-header{
     background-color: #d5e4ef;

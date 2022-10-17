@@ -51,6 +51,8 @@ class UI {
 						<div class="bottom">
 							<div class="btn__group">
 								<button class="btn addToCart" data-id=${producto.id}>Añadir carrito</button>
+								<a href="modificarproductor.html" class="btn">Modificar Producto</a>
+								<a href="index.html" class="btn">Eliminar Producto</a>
 							</div>
 						</div>
 				</div>
